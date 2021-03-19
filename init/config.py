@@ -8,7 +8,12 @@ from . import param
 cnf: Optional[ConfigParser] = None
 
 
-def init():
+def init() -> None:
+    """
+    Initialize configuration
+
+    :return: None
+    """
     global cnf
     args = param.args
     cnf = ConfigParser()
